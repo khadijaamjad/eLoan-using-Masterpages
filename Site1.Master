@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="E_loan.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+	<header id="header">  
+	<h1>E Loan</h1>  
+	</header>  
+	<nav id="nav">  
+        <ul style="display: inline;">
+            <li><a href="MainPage.aspx">Home</a></li>
+            <li><a href="SignUp.aspx">Sign Up</a></li>
+            <li><a href="SignIn.aspx">Sign In</a></li>
+            <li><a href="GetLoan.aspx">Get Loan</a></li>
+            <li><a href="ViewRecords.aspx">View Records</a></li>
+        </ul>  
+	</nav>  
+	    <div id="con">  
+	        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">  
+	          
+	        </asp:ContentPlaceHolder>  
+	    </div>  
+	<footer id="footer" style="position:absolute; margin-bottom:0px;width:100%;text-align:center">  
+	    Created by Khadija Amjad. All rights reserved.
+	</footer>  
+</body>
+
+</html>
